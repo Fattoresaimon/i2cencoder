@@ -1,7 +1,7 @@
 # I2C Encoder
 --------------------------------------------------------------------------------
 
-##Introduction
+## Introduction
 
 The I2C Encoder is a small board where you can use a classical mechanical encoder with a I2C bus. The device
 include also the possibility to add a bi-color LED and set luminosity trough the I2C bus. It’s possible to connect up
@@ -19,5 +19,10 @@ It's possible to buy this board here:
 * [Tindie](http://tindie.com)
 * [eBay](http://ebay.com)
 
-## Arduino Library
-I already write an Arduino library and is possible to dowload from `/Arduino Library`
+## Repository Structure
+* **Arduino Library:** Ready to use library for the Arduino boards, with some examples.
+* **Firmware:** Project folder of Microchip MPLAB X containg the code running inside of the PIC16F15323
+* **Hardware:** Folder containing the gerber file, schematic and BOM. the original project is not avaible.
+* **Datasheet EncoderI2C:** Datasheet of the board with the description of the registers and some useful information.
+
+
