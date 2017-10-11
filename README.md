@@ -1,4 +1,8 @@
 # I2C Encoder
+--------------------------------------------------------------------------------
+
+##Introduction
+
 The I2C Encoder is a small board where you can use a classical mechanical encoder with a I2C bus. The device
 include also the possibility to add a bi-color LED and set luminosity trough the I2C bus. It’s possible to connect up
 to 16 boards in cascade and read all of them with the same I2C bus.
@@ -9,3 +13,11 @@ decreased according to the rotation direction. When the counter value is outside
 the counter value can be wrapped or can stuck on the threshold valued reached.
 The I2C Encoder also has an open-drain interrupt pin. It is set to logic low every time when the encoder is rotated
 or pushed. The status register must be read by the master to check what is changed.
+
+## Where you can get this board?
+It's possible to buy this board here:
+* [Tindie](http://tindie.com)
+* [eBay](http://ebay.com)
+
+## Arduino Library
+I already write an Arduino library and is possible to dowload from `/Arduino Library`
