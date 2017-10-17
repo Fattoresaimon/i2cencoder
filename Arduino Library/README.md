@@ -1,4 +1,4 @@
-# I2C Encoder Library
+# I2C Encoder Arduino Library
 --------------------------------------------------------------------------------
 
 ## Introduction
@@ -43,19 +43,20 @@ Possible parameter are the following:
 
 | Parameter     | Description   | 
 | ------------- |:-------------:| 
-INTE_ENABLE	    Enable the interrupt output pin
-INTE_DISABLE    Disable the interrupt output pin
-LEDE_ENABLE	    Enable the LED output
-LEDE_DISABLE
-WRAP_ENABLE	
-WRAP_DISABLE
-DIRE_LEFT	
-DIRE_RIGHT	
-IPUP_DISABLE
-IPUP_ENABLE 
-RMOD_X2		
-RMOD_X1		
-RESET		
+INTE_ENABLE	    | Enable the interrupt output pin
+INTE_DISABLE    | Disable the interrupt output pin
+LEDE_ENABLE	    | Enable the LED output
+LEDE_DISABLE    | Disable the LED output
+WRAP_ENABLE	    | Wrap enable. When the counter value reaches the CMAX+1, restart to the CMIN and vice versa
+WRAP_DISABLE    | Wrap disable. When the counter value reaches the CMAX or CMIN, the counter stops to increasing or
+decreasing  
+DIRE_LEFT	      |
+DIRE_RIGHT	     |
+IPUP_DISABLE    |
+IPUP_ENABLE     |
+RMOD_X2		       |
+RMOD_X1		       |
+RESET		         |
 
 
 
