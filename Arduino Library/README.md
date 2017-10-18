@@ -8,9 +8,9 @@ Here you can find the library and some example for the arduino boards
 ## Installation
 
 The installation is very simple:
-* Dowload the file **i2cEncoderLib.cpp** and **i2cEncoderLib.h**
-* Put in the folder where you have you arduino **.ino** source file
-* Add the following include in the top of the source file:
+* Download the files **i2cEncoderLib.cpp** and **i2cEncoderLib.h**
+* Put them in the folder where you have you arduino **.ino** source file
+* Add the following include on the top of the source file:
 ``` C++
 #include <Wire.h>
 #include "i2cEncoderLib.h"
@@ -43,7 +43,7 @@ Declaration of an array of tow encoders with the address 0x30 and 0x34.
 
 ### General
 #### void begin( uint8_t conf)
-This method write the configuration register (reg: 0x00) of the encoder.
+This is used for initialize the encoder bye writing the configuration register (reg: 0x00) of the encoder.
 The parameters can be concatenate in OR mode.
 Possible parameters are the following:
 
@@ -112,14 +112,14 @@ Return the PWM value of the LED A (reg:0x0E).
 Return the PWM value of the LED B (reg:0x0F).
 
 #### int32_t readCounterLong(void)
-Retrun the counter value in the format **int32_t**, bye reading all the 4 byte of the counter registers (reg:0x02 0x03 0x04 0x05).
+Return the counter value in the format **int32_t**, bye reading all the 4 byte of the counter registers (reg:0x02 0x03 0x04 0x05).
 
 #### int16_t readCounterInt(void)
-Retrun the counter value in the format **int16_t**, bye reading the 2 LSB byte of the counter registers (reg:0x04 0x05).
+Return the counter value in the format **int16_t**, bye reading the 2 LSB byte of the counter registers (reg:0x04 0x05).
 Useful when the counter register is between the values -32768 to 32767
 
 #### int8_t readCounterByte(void)
-Retrun the counter value in the format **int8_t**, bye reading the LSB byte of the counter registers (reg:0x05).
+Return the counter value in the format **int8_t**, bye reading the LSB byte of the counter registers (reg:0x05).
 Useful when the counter register is between the values -128 to 127
 
 #### int32_t readMax(void)
