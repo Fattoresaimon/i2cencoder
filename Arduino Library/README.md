@@ -3,7 +3,7 @@
 
 ## Introduction
 
-Here yuo can find the library and some example for the arduino boards
+Here you can find the library and some example for the arduino boards
 
 ## Installation
 
