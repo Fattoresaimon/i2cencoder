@@ -3,14 +3,14 @@
 
 ## Introduction
 
-Here you can find the library and some example for the arduino boards
+Here you can find the library and some examples for arduino boards
 
 ## Installation
 
 The installation is very simple:
 * Download the files **i2cEncoderLib.cpp** and **i2cEncoderLib.h**
 * Put them in the folder where you have you arduino **.ino** source file
-* Add the following include on the top of the source file:
+* Add the following "include" on the top of the source file:
 ``` C++
 #include <Wire.h>
 #include "i2cEncoderLib.h"
@@ -19,7 +19,7 @@ The installation is very simple:
 
 ## Initialization of the class
 
-The library make avaible the class **i2cEncoderLib**
+The library makes available the class **i2cEncoderLib**
 For initialize the library you have to declare an istance of the class **i2cEncoderLib** for each encoders.
 For example:
 
@@ -32,7 +32,7 @@ Declaration of one encoder with the address 0x30.
 i2cEncoderLib encoder1(0x30);
 i2cEncoderLib encoder2(0x32);
 ```
-Declaration of tow encoders with the address 0x30 and 0x34 in tow separated variable.
+Declaration of two encoders with the address 0x30 and 0x34 in tow separated variable.
 
 ```C++
  i2cEncoderLib encoder[2] = { i2cEncoderLib(0x30), i2cEncoderLib(0x34)};
@@ -43,7 +43,7 @@ Declaration of an array of tow encoders with the address 0x30 and 0x34.
 
 ### General
 #### void begin( uint8_t conf)
-This is used for initialize the encoder bye writing the configuration register (reg: 0x00) of the encoder.
+This is used for initialize the encoder by writing the configuration register (reg: 0x00) of the encoder.
 The parameters can be concatenate in OR mode.
 Possible parameters are the following:
 
@@ -68,11 +68,11 @@ Possible parameters are the following:
   encoder.begin((INTE_ENABLE | LEDE_ENABLE | WRAP_ENABLE |  DIRE_RIGHT | IPUP_ENABLE | RMOD_X1));
 ```
 #### bool updateStatus(void)
-Read from the encoder the status register (reg:0x01) and save the value internally.
+Read from the encoder status register (reg:0x01) and save the value internally.
 Return value is **true** in case of some event, otherwise is **false**
 
 #### bool readStatus(uint8_t s)
-Must be called after **updateStatus()**, this method us ued for check if some event occured.
+Must be called after **updateStatus()**, this method is ued for check if some event occured.
 Return value is **true** in case of the event occured, otherwise is **false**
 Possible parameter are:
 
@@ -112,21 +112,21 @@ Return the PWM value of the LED A (reg:0x0E).
 Return the PWM value of the LED B (reg:0x0F).
 
 #### int32_t readCounterLong(void)
-Return the counter value in the format **int32_t**, bye reading all the 4 byte of the counter registers (reg:0x02 0x03 0x04 0x05).
+Return the counter value in the format **int32_t**, by reading all the 4 byte of the counter registers (reg:0x02 0x03 0x04 0x05).
 
 #### int16_t readCounterInt(void)
-Return the counter value in the format **int16_t**, bye reading the 2 LSB byte of the counter registers (reg:0x04 0x05).
+Return the counter value in the format **int16_t**, by reading the 2 LSB byte of the counter registers (reg:0x04 0x05).
 Useful when the counter register is between the values -32768 to 32767
 
 #### int8_t readCounterByte(void)
-Return the counter value in the format **int8_t**, bye reading the LSB byte of the counter registers (reg:0x05).
+Return the counter value in the format **int8_t**, by reading the LSB byte of the counter registers (reg:0x05).
 Useful when the counter register is between the values -128 to 127
 
 #### int32_t readMax(void)
 Return the maximum threshold in fromat **int32_t**, bye reading all the 4 byte of the counter Max (reg:0x06 0x07 0x08 0x09).
 
 #### int32_t readMin(void)
-Return the minimum threshold in fromat **int32_t**, bye reading all the 4 byte of the counter Min (reg:0x0A 0x0B 0x0C 0x0D).
+Return the minimum threshold in fromat **int32_t**, by reading all the 4 byte of the counter Min (reg:0x0A 0x0B 0x0C 0x0D).
 
 ### Writing
 #### void writeLEDA(uint8_t pwma)
