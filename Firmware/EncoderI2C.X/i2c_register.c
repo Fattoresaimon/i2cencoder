@@ -103,7 +103,9 @@ void RegisterWrite(uint8_t add, uint8_t data) {
 
         case DATA_COUNTER_BYTE4:
             Cvalue.bval[BYTE4] = data;
+
             break;
+
         case DATA_COUNTER_BYTE3:
             Cvalue.bval[BYTE3] = data;
             break;
@@ -112,11 +114,18 @@ void RegisterWrite(uint8_t add, uint8_t data) {
             break;
         case DATA_COUNTER_BYTE1:
             Cvalue.bval[BYTE1] = data;
+            if (Cvalue.val > Cmax.val)
+                Cvalue.val = Cmax.val;
+            else {
+                if (Cvalue.val < Cmin.val)
+                    Cvalue.val = Cmin.val;
+            }
             break;
 
             /*** Max Value ***/
         case DATA_MAX_BYTE4:
             Cmax.bval[BYTE4] = data;
+
             break;
 
         case DATA_MAX_BYTE3:
@@ -129,11 +138,14 @@ void RegisterWrite(uint8_t add, uint8_t data) {
 
         case DATA_MAX_BYTE1:
             Cmax.bval[BYTE1] = data;
+            if (Cvalue.val > Cmax.val)
+                Cvalue.val = Cmax.val;
             break;
 
             /*** Min Value ***/
         case DATA_MIN_BYTE4:
             Cmin.bval[BYTE4] = data;
+
             break;
 
         case DATA_MIN_BYTE3:
@@ -146,6 +158,8 @@ void RegisterWrite(uint8_t add, uint8_t data) {
 
         case DATA_MIN_BYTE1:
             Cmin.bval[BYTE1] = data;
+            if (Cvalue.val < Cmin.val)
+                Cvalue.val = Cmin.val;
             break;
 
         case LED_A_PWM:
