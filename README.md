@@ -22,7 +22,7 @@ It's possible to buy this board here:
 ## Repository Structure
 * **Arduino Library:** Ready to use library for the Arduino boards, with some examples.
 * **Firmware:** Project folder of Microchip MPLAB X containg the code running inside of the PIC16F15323
-* **Hardware:** Folder containing the gerber file, schematic and BOM. the original project is not avaible.
+* **Hardware:** Folder containing the gerber file, schematic and BOM. The original project is not available.
 * **Datasheet EncoderI2C:** Datasheet of the board with the description of the registers and some useful information.
 
 
