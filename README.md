@@ -1,5 +1,7 @@
 # I2C Encoder
 --------------------------------------------------------------------------------
+ 
+ <img src="PCB_TOP.jpg" width="400">  <img src="PCB_BOT.jpg" width="400"> <img src="FullAssembled.jpg" width="400">
 
 ## Introduction
 
