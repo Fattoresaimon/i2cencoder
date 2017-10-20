@@ -2,7 +2,17 @@
 #include "i2cEncoderLib.h"
 
 /*In this example, i want my variable counter between -10 and 10. 
-When it reaches the limit the LED will blink red in case of minimum and will blink green when it reaches the maximum.*/
+When it reaches the limit the LED will blink red in case of minimum and will blink green when it reaches the maximum.
+The INT pin is readed in polling mode
+
+Connections with Arduino UNO:
+- -> GND
++ -> 5V
+SDA -> A4
+SCL -> A5
+INT -> 12
+*/
+
 
 const int IntPin = 12;
 i2cEncoderLib encoder(0x30); //Initialize the I2C encoder class with the I2C address 0x30 is the address with all the jumper open

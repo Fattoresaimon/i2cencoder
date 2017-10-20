@@ -1,10 +1,10 @@
 //
-//    FILE: i2cEncoderLib.h
-// VERSION: 0.1..
-// PURPOSE: Libreary for the i2c encoder board with arduinp
+//    FILE: i2cEncoderLib.cpp
+// VERSION: 0.2.0
+// PURPOSE: Library for the I2C Encoder with arduino
 // LICENSE: GPL v3 (http://www.gnu.org/licenses/gpl.html)
 //
-// DATASHEET:
+// DATASHEET: https://github.com/Fattoresaimon/i2cencoder/blob/master/EncoderI2C%20v1.2.pdf
 //
 //     URL:
 //
