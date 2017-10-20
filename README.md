@@ -2,7 +2,7 @@
 --------------------------------------------------------------------------------
  
  <img src="PCB_TOP.jpg" width="300">  <img src="PCB_BOT.jpg" width="300"> 
- <img src="FullAssembled.jpg" width="300"> <img src="ChainExample.jpg" width="300">
+ <img src="FullAssembled.jpg" width="300"> <img src="ChainExample.jpg" width="500">
 
 ## Introduction
 
