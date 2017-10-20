@@ -1,7 +1,8 @@
 # I2C Encoder
 --------------------------------------------------------------------------------
  
- <img src="PCB_TOP.jpg" width="300">  <img src="PCB_BOT.jpg" width="300"> <img src="FullAssembled.jpg" width="300">
+ <img src="PCB_TOP.jpg" width="300">  <img src="PCB_BOT.jpg" width="300"> 
+ <img src="FullAssembled.jpg" width="300"> <img src="ChainExample.jpg" width="300">
 
 ## Introduction
 
@@ -18,7 +19,7 @@ or pushed. The status register must be read by the master to check what is chang
 
 ## Where you can get this board?
 It's possible to buy this board here:
-* [Tindie](http://tindie.com)
+* [Tindie](https://www.tindie.com/products/10730/)
 * [eBay](http://ebay.com)
 
 ## Repository Structure
