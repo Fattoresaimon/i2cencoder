@@ -29,6 +29,6 @@ It's possible to buy this board here:
 * [Datasheet EncoderI2C:](EncoderI2C%20v1.3.pdf) Datasheet of the board with the description of the registers and some useful information.
 
 
-**You can donate here with this link. Thank you!**
+**If you want to donate for my work, i would really appreciate it. You can donate here with this link. Thank you!**
 
 [![donate](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=5DX7BCX7JD5SL)
