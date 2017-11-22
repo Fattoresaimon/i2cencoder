@@ -1,7 +1,7 @@
 # I2C Encoder
 --------------------------------------------------------------------------------
- 
- <img src="PCB_TOP.jpg" width="300">  <img src="PCB_BOT.jpg" width="300"> 
+
+ <img src="PCB_TOP.jpg" width="300">  <img src="PCB_BOT.jpg" width="300">
  <img src="FullAssembled.jpg" width="300"> <img src="ChainExample.jpg" width="500">
 
 ## Introduction
@@ -17,6 +17,10 @@ the counter value can be wrapped or can stuck on the threshold valued reached.
 The I2C Encoder also has an open-drain interrupt pin. It is set to logic low every time when the encoder is rotated
 or pushed. The status register must be read by the master to check what is changed.
 
+## HW version 1.2
+* Resolved the I2C pull-up resistor issue.
+* Removed pull-up and anti bouncing filter on the push-button. The MCU pull-up are used and the  anti bouncing is done in FW.
+
 ## Where you can get this board?
 It's possible to buy this board here:
 * [Tindie](https://www.tindie.com/products/10730/)
@@ -26,7 +30,7 @@ It's possible to buy this board here:
 * [Arduino Library:](/Arduino%20Library) Ready to use library for the Arduino boards, with some examples.
 * [Firmware:](/Firmware) Project folder of Microchip MPLAB X containg the code running inside of the PIC16F15323
 * [Hardware:](/Hardware) Folder containing the gerber file, schematic and BOM. The original project is not available.
-* [Datasheet EncoderI2C:](EncoderI2C%20v1.3.pdf) Datasheet of the board with the description of the registers and some useful information.
+* [Datasheet EncoderI2C:](EncoderI2C%20HW%20v1.2.pdf) Datasheet of the board with the description of the registers and some useful information.
 
 
 **If you want to donate for my work, i would really appreciate it. You can donate here with this link. Thank you!**
