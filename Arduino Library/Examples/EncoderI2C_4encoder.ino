@@ -16,7 +16,7 @@ INT -> 12
 
 #define ENCODER_N 4
 const int IntPin = 12;
-i2cEncoderLib encoder[ENCODER_N] = { i2cEncoderLib(0x39), i2cEncoderLib(0x30), i2cEncoderLib(0x32), i2cEncoderLib(0x34)}; //Class initialization with the I2C addresses 
+i2cEncoderLib encoder[ENCODER_N] = { i2cEncoderLib(0x30), i2cEncoderLib(0x31), i2cEncoderLib(0x32), i2cEncoderLib(0x33)}; //Class initialization with the I2C addresses 
 
 
 int32_t counter[ENCODER_N] = {0, 0, 0, 0};
