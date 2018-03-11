@@ -24,7 +24,7 @@ or pushed. The status register must be read by the master to check what is chang
 ## Where you can get this board?
 It's possible to buy this board here:
 * [Tindie](https://www.tindie.com/products/10730/)
-* [eBay](https://www.ebay.com/itm/172973161890)
+* [eBay](https://www.ebay.it/usr/fattoresaimon)
 
 ## Repository Structure
 * [Arduino Library:](/Arduino%20Library) Ready to use library for the Arduino boards, with some examples.
