@@ -4,6 +4,8 @@
  <img src="PCB_TOP.jpg" width="300">  <img src="PCB_BOT.jpg" width="300">
  <img src="FullAssembled.jpg" width="300"> <img src="ChainExample.jpg" width="500">
 
+# The I2C encoder V1 and V2 are not compatible. If you have the V2 please go in the correct [repository](https://github.com/Fattoresaimon/I2CEncoderV2)
+
 ## Introduction
 
 The I2C Encoder is a small board where you can use a classical mechanical encoder with a I2C bus. This device
